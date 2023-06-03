@@ -1,115 +1,124 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/background_settings"
-    >
+    android:orientation="vertical">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
-    <ImageButton
-        android:id="@+id/btn_back"
-        android:layout_width="@dimen/sett_back"
-        android:layout_height="@dimen/sett_back"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="@dimen/sett_top_bottom"
-        android:background="@null"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/back" />
+        <ImageButton
+            android:id="@+id/btn_back"
+            android:layout_width="@dimen/sett_back"
+            android:layout_height="@dimen/sett_back"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="@dimen/sett_top_bottom"
+            android:background="@null"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/back" />
 
-    <TextView
-        android:id="@+id/tvHeader"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="64dp"
-        android:layout_marginTop="@dimen/sett_top_bottom"
-        android:text="@string/settings"
-        android:textColor="@color/text"
-        android:textSize="22sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        <TextView
+            android:id="@+id/tvHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="64dp"
+            android:layout_marginTop="@dimen/sett_top_bottom"
+            android:text="@string/settings"
+            android:textColor="@color/text"
+            android:textSize="22sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </FrameLayout>
 
     <Switch
         android:id="@+id/swDarkTheme"
         android:textColor="@color/text"
-        android:layout_width="0dp"
+        android:layout_width="378dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/sett_padding"
         android:layout_marginTop="61dp"
         android:layout_marginEnd="@dimen/sett_padding"
         android:text="@string/dark_theme"
         android:textSize="@dimen/sett_text_size"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvHeader" />
 
-    <TextView
-        android:id="@+id/tvShare"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/sett_padding"
-        android:layout_marginTop="@dimen/sett_margin_top"
-        android:text="@string/share"
-        android:textColor="@color/text"
-        android:textSize="@dimen/sett_text_size"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/swDarkTheme" />
 
-    <TextView
-        android:id="@+id/tvSupport"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/sett_padding"
-        android:layout_marginTop="@dimen/sett_margin_top"
-        android:text="@string/support"
-        android:textColor="@color/text"
-        android:textSize="@dimen/sett_text_size"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvShare" />
+        />
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tvShare"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/sett_padding"
+            android:layout_marginTop="@dimen/sett_margin_top"
+            android:text="@string/share"
+            android:textColor="@color/text"
+            android:textSize="@dimen/sett_text_size"
+            android:layout_gravity="start"/>
 
-    <TextView
-        android:id="@+id/tvTerms"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/sett_padding"
-        android:layout_marginTop="@dimen/sett_margin_top"
-        android:text="@string/terms"
-        android:textColor="@color/text"
-        android:textSize="@dimen/sett_text_size"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvSupport" />
+        <ImageView
+            android:id="@+id/imgShare"
+            android:layout_width="@dimen/sett_icon"
+            android:layout_height="@dimen/sett_icon"
+            android:layout_marginTop="@dimen/sett_margin_top"
+            android:layout_marginEnd="@dimen/sett_margin_end"
+            android:layout_gravity="end"
+            app:srcCompat="@drawable/share"/>
 
-    <ImageView
-        android:id="@+id/imgShare"
-        android:layout_width="@dimen/sett_icon"
-        android:layout_height="@dimen/sett_icon"
-        android:layout_marginTop="@dimen/sett_margin_top"
-        android:layout_marginEnd="@dimen/sett_margin_end"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/swDarkTheme"
-        app:srcCompat="@drawable/share" />
+    </FrameLayout>
 
-    <ImageView
-        android:id="@+id/imgSupport"
-        android:layout_width="@dimen/sett_icon"
-        android:layout_height="@dimen/sett_icon"
-        android:layout_marginTop="@dimen/sett_margin_top"
-        android:layout_marginEnd="@dimen/sett_margin_end"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imgShare"
-        app:srcCompat="@drawable/support" />
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tvSupport"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/sett_padding"
+            android:layout_marginTop="@dimen/sett_margin_top"
+            android:text="@string/support"
+            android:textColor="@color/text"
+            android:textSize="@dimen/sett_text_size"
+            android:layout_gravity="start" />
 
-    <ImageView
-        android:id="@+id/imgTerms"
-        android:layout_width="@dimen/sett_icon"
-        android:layout_height="@dimen/sett_icon"
-        android:layout_marginTop="@dimen/sett_margin_top"
-        android:layout_marginEnd="@dimen/sett_margin_end"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imgSupport"
-        app:srcCompat="@drawable/forward" />
+        <ImageView
+            android:id="@+id/imgSupport"
+            android:layout_width="@dimen/sett_icon"
+            android:layout_height="@dimen/sett_icon"
+            android:layout_marginTop="@dimen/sett_margin_top"
+            android:layout_marginEnd="@dimen/sett_margin_end"
+            app:srcCompat="@drawable/support"
+            android:layout_gravity="end"/>
+    </FrameLayout>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvTerms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/sett_padding"
+            android:layout_marginTop="@dimen/sett_margin_top"
+            android:text="@string/terms"
+            android:textColor="@color/text"
+            android:textSize="@dimen/sett_text_size"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvSupport" />
+
+
+        <ImageView
+            android:id="@+id/imgTerms"
+            android:layout_width="@dimen/sett_icon"
+            android:layout_height="@dimen/sett_icon"
+            android:layout_marginTop="@dimen/sett_margin_top"
+            android:layout_marginEnd="@dimen/sett_margin_end"
+            app:srcCompat="@drawable/forward"
+            android:layout_gravity="end"/>
+    </FrameLayout>
+</LinearLayout>
+
