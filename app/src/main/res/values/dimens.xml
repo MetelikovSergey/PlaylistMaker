@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="main_padding">16dp</dimen>
+    <dimen name="main_top_bottom">14dp</dimen>
+    <dimen name="main_text_size">22sp</dimen>
+    <dimen name="main_corner_radius">16dp</dimen>
+    <dimen name="main_layout_weight">1</dimen>
+    <dimen name="main_inset">0dp</dimen>
+
+    <dimen name="sett_padding">20dp</dimen>
+    <dimen name="sett_icon">20dp</dimen>
+    <dimen name="sett_back">30dp</dimen>
+    <dimen name="sett_top_bottom">14dp</dimen>
+    <dimen name="sett_margin_top">40dp</dimen>
+    <dimen name="sett_margin_end">32dp</dimen>
+    <dimen name="sett_text_size">16sp</dimen>
+    <dimen name="main_Bottom">28dp</dimen>
+    <dimen name="main_textView_bottom">40dp</dimen>
+
+</resources>
