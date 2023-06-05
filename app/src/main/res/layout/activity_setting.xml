@@ -4,6 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
+
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -32,66 +33,71 @@
             app:layout_constraintTop_toTopOf="parent" />
     </FrameLayout>
 
-    <Switch
-        android:id="@+id/swDarkTheme"
-        android:textColor="@color/text"
-        android:layout_width="378dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/sett_padding"
-        android:layout_marginTop="61dp"
-        android:layout_marginEnd="@dimen/sett_padding"
-        android:text="@string/dark_theme"
-        android:textSize="@dimen/sett_text_size"
-
-
-        />
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
+
+        <Switch
+            android:id="@+id/swDarkTheme"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/sett_padding"
+            android:layout_marginTop="61dp"
+            android:layout_marginEnd="44dp"
+            android:text="@string/dark_theme"
+            android:textColor="@color/text"
+            android:textSize="@dimen/sett_text_size" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
         <TextView
             android:id="@+id/tvShare"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_gravity="start"
             android:layout_marginStart="@dimen/sett_padding"
             android:layout_marginTop="@dimen/sett_margin_top"
             android:text="@string/share"
             android:textColor="@color/text"
-            android:textSize="@dimen/sett_text_size"
-            android:layout_gravity="start"/>
+            android:textSize="@dimen/sett_text_size" />
 
         <ImageView
             android:id="@+id/imgShare"
             android:layout_width="@dimen/sett_icon"
             android:layout_height="@dimen/sett_icon"
+            android:layout_gravity="end"
             android:layout_marginTop="@dimen/sett_margin_top"
             android:layout_marginEnd="@dimen/sett_margin_end"
-            android:layout_gravity="end"
-            app:srcCompat="@drawable/share"/>
+            app:srcCompat="@drawable/share" />
 
     </FrameLayout>
 
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
+
         <TextView
             android:id="@+id/tvSupport"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_gravity="start"
             android:layout_marginStart="@dimen/sett_padding"
             android:layout_marginTop="@dimen/sett_margin_top"
             android:text="@string/support"
             android:textColor="@color/text"
-            android:textSize="@dimen/sett_text_size"
-            android:layout_gravity="start" />
+            android:textSize="@dimen/sett_text_size" />
 
         <ImageView
             android:id="@+id/imgSupport"
             android:layout_width="@dimen/sett_icon"
             android:layout_height="@dimen/sett_icon"
+            android:layout_gravity="end"
             android:layout_marginTop="@dimen/sett_margin_top"
             android:layout_marginEnd="@dimen/sett_margin_end"
-            app:srcCompat="@drawable/support"
-            android:layout_gravity="end"/>
+            app:srcCompat="@drawable/support" />
     </FrameLayout>
 
     <FrameLayout
@@ -115,10 +121,10 @@
             android:id="@+id/imgTerms"
             android:layout_width="@dimen/sett_icon"
             android:layout_height="@dimen/sett_icon"
+            android:layout_gravity="end"
             android:layout_marginTop="@dimen/sett_margin_top"
             android:layout_marginEnd="@dimen/sett_margin_end"
-            app:srcCompat="@drawable/forward"
-            android:layout_gravity="end"/>
+            app:srcCompat="@drawable/forward" />
     </FrameLayout>
 </LinearLayout>
 
