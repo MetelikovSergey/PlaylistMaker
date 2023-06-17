@@ -16,8 +16,6 @@
             android:layout_marginStart="20dp"
             android:layout_marginTop="@dimen/sett_top_bottom"
             android:background="@null"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/back" />
 
         <TextView
@@ -28,9 +26,7 @@
             android:layout_marginTop="@dimen/sett_top_bottom"
             android:text="@string/settings"
             android:textColor="@color/text"
-            android:textSize="22sp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            android:textSize="22sp" />
     </FrameLayout>
 
     <FrameLayout
@@ -55,22 +51,12 @@
 
         <TextView
             android:id="@+id/tvShare"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="start"
-            android:layout_marginStart="@dimen/sett_padding"
-            android:layout_marginTop="@dimen/sett_margin_top"
-            android:text="@string/share"
-            android:textColor="@color/text"
-            android:textSize="@dimen/sett_text_size" />
+            style="@style/TextViewSettings"
+            android:text="@string/share" />
 
         <ImageView
             android:id="@+id/imgShare"
-            android:layout_width="@dimen/sett_icon"
-            android:layout_height="@dimen/sett_icon"
-            android:layout_gravity="end"
-            android:layout_marginTop="@dimen/sett_margin_top"
-            android:layout_marginEnd="@dimen/sett_margin_end"
+            style="@style/ImageViewSettings"
             app:srcCompat="@drawable/share" />
 
     </FrameLayout>
@@ -81,22 +67,12 @@
 
         <TextView
             android:id="@+id/tvSupport"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="start"
-            android:layout_marginStart="@dimen/sett_padding"
-            android:layout_marginTop="@dimen/sett_margin_top"
-            android:text="@string/support"
-            android:textColor="@color/text"
-            android:textSize="@dimen/sett_text_size" />
+            style="@style/TextViewSettings"
+            android:text="@string/support" />
 
         <ImageView
             android:id="@+id/imgSupport"
-            android:layout_width="@dimen/sett_icon"
-            android:layout_height="@dimen/sett_icon"
-            android:layout_gravity="end"
-            android:layout_marginTop="@dimen/sett_margin_top"
-            android:layout_marginEnd="@dimen/sett_margin_end"
+            style="@style/ImageViewSettings"
             app:srcCompat="@drawable/support" />
     </FrameLayout>
 
@@ -106,25 +82,15 @@
 
         <TextView
             android:id="@+id/tvTerms"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/sett_padding"
-            android:layout_marginTop="@dimen/sett_margin_top"
-            android:text="@string/terms"
-            android:textColor="@color/text"
-            android:textSize="@dimen/sett_text_size"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tvSupport" />
+            style="@style/TextViewSettings"
+            android:text="@string/terms" />
 
 
         <ImageView
             android:id="@+id/imgTerms"
-            android:layout_width="@dimen/sett_icon"
-            android:layout_height="@dimen/sett_icon"
-            android:layout_gravity="end"
-            android:layout_marginTop="@dimen/sett_margin_top"
-            android:layout_marginEnd="@dimen/sett_margin_end"
-            app:srcCompat="@drawable/forward" />
+            style="@style/ImageViewSettings"
+            app:srcCompat="@drawable/forward"
+            />
     </FrameLayout>
 </LinearLayout>
 

@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/background_main"
+    style="@style/LinerLayoutMain"
     android:orientation="vertical">
 
 
@@ -22,14 +22,14 @@
 
 
     <Button
-        style="@style/ButtonStyle"
+        style="@style/ButtonStyleMain"
         android:id="@+id/btn_search"
         android:text="@string/search"
         app:icon="@drawable/search"
         />
 
     <Button
-        style="@style/ButtonStyle"
+        style="@style/ButtonStyleMain"
         android:id="@+id/btn_media"
         android:text="@string/media"
         app:icon="@drawable/library"
@@ -37,12 +37,11 @@
          />
 
     <Button
-        style="@style/ButtonStyle"
         android:id="@+id/btn_settings"
+        style="@style/ButtonStyleMain"
         android:layout_marginBottom="@dimen/main_Bottom"
         android:text="@string/settings"
-        app:icon="@drawable/settings"
-        />
+        app:icon="@drawable/settings" />
     />
 
 </LinearLayout>
