@@ -46,5 +46,14 @@
         <item name="android:background">@color/background_main</item>
     </style>
 
+    <style name="TextCollor">
+        <item name="android:textColor">@color/text</item>
+    </style>
+
+    <style name="SettingsButtomBack">
+        <item name="srcCompat">@drawable/back</item>
+
+    </style>
+
 
 </resources>

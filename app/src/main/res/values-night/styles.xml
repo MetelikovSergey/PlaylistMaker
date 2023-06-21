@@ -46,5 +46,14 @@
         <item name="android:background">@color/backgroundNight</item>
     </style>
 
+    <style name="TextCollor">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="SettingsButtomBack">
+        <item name="srcCompat">@drawable/backnight</item>
+
+    </style>
+
 
 </resources>

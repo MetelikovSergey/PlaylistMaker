@@ -16,16 +16,16 @@
             android:layout_marginStart="20dp"
             android:layout_marginTop="@dimen/sett_top_bottom"
             android:background="@null"
-            app:srcCompat="@drawable/back" />
+           style="@style/SettingsButtomBack" />
 
         <TextView
             android:id="@+id/tvHeader"
+            style="@style/TextCollor"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="64dp"
             android:layout_marginTop="@dimen/sett_top_bottom"
             android:text="@string/settings"
-            android:textColor="@color/text"
             android:textSize="22sp" />
     </FrameLayout>
 
@@ -35,13 +35,13 @@
 
         <Switch
             android:id="@+id/swDarkTheme"
+            style="@style/TextCollor"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/sett_padding"
             android:layout_marginTop="61dp"
             android:layout_marginEnd="44dp"
             android:text="@string/dark_theme"
-            android:textColor="@color/text"
             android:textSize="@dimen/sett_text_size" />
     </FrameLayout>
 
@@ -89,8 +89,7 @@
         <ImageView
             android:id="@+id/imgTerms"
             style="@style/ImageViewSettings"
-            app:srcCompat="@drawable/forward"
-            />
+            app:srcCompat="@drawable/forward" />
     </FrameLayout>
 </LinearLayout>
 
