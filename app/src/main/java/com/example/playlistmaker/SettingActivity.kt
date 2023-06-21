@@ -27,7 +27,7 @@ class SettingActivity : AppCompatActivity() {
         findViewById<TextView>(R.id.tvSupport).setOnClickListener{
             Intent(Intent.ACTION_SENDTO).apply {
                 data = Uri.parse("mailto:")
-                putExtra(Intent.EXTRA_EMAIL, arrayOf(getString(R.string.my_e_mail))
+                putExtra(Intent.EXTRA_EMAIL, arrayOf(getString(R.string.my_e_mail)))
                 putExtra(Intent.EXTRA_SUBJECT,getString(R.string.massage_subject))
                 putExtra(Intent.EXTRA_TEXT,getString(R.string.message_text))
                 startActivity(this)
